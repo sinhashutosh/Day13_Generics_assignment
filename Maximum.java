@@ -2,7 +2,8 @@ package org.example;
 
 public class Maximum {
     public static void main(String[] args) {
-        Operation <Float> in =  new Operation<>();
-        in.Maximum(22.1f,29.3f,31.3f);
+        Operation<String> in = new Operation<>();
+        String s1 = in.Maximum("Apple", "Banana", "Peach");
+        System.out.println(s1 + " is maximum String");
     }
 }
