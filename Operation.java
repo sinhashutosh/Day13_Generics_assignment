@@ -12,15 +12,16 @@ public class Operation<T extends Comparable<T>> {
 
 
     public <T extends Comparable<T>> void maximum() {
-         Arrays.sort(array);
+        Arrays.sort(array);
+        findMax();
     }
 
-//    public void sort() {
-//        System.out.println("sorted array are  ");
-//        for (T num : array) {
-//            System.out.print(num + " ");
-//        }
-//    }
+    public void sort() {
+        System.out.println("sorted array are  ");
+        for (T num : array) {
+            System.out.print(num + " ");
+        }
+    }
 
     public void findMax() {
         Integer index = array.length;

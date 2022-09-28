@@ -11,8 +11,8 @@ public class Maximum {
         operation1.getValue(intArray);
         operation2.getValue(doubleArray);
         operation3.getValue(stringArray);
-        operation1.findMax();
-        operation2.findMax();
-        operation3.findMax();
+//        operation1.findMax();
+//        operation2.findMax();
+//        operation3.findMax();
     }
 }
