@@ -1,4 +1,4 @@
-package org.example.Max;
+package org.example;
 
 public class Operation<T extends Number> {
     Integer x;
