@@ -1,11 +1,11 @@
-package org.example.Max;
+package org.example;
 
 public class Operation<T extends Number> {
-    Integer x;
-    Integer y;
-    Integer z;
+    Float x;
+    Float y;
+    Float z;
 
-    public void Maximum(Integer x,Integer y, Integer z) {
+    public void Maximum(Float x,Float y, Float z) {
         this.x = x;
         this.y = y;
         this.z = z;
