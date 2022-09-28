@@ -1,28 +1,30 @@
 package org.example;
 
-public class Operation<T extends Number> {
-    Integer x;
-    Integer y;
-    Integer z;
+import java.util.Arrays;
 
-    public void Maximum(Integer x,Integer y, Integer z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
-        if (x > y) {
-            if (x > z) {
-                System.out.println(x + " is maximum number ");
-            } else {
-                System.out.println(z + "  is maximum number  ");
-            }
-        } else if (y > z) {
-            System.out.println(y + " is maximum number ");
-        } else {
-            System.out.println(z + " is maximum number");
-        }
+public class Operation<T extends Comparable<T>> {
+    T[] array;
+
+    public void getValue(T[] array) {
+        this.array = array;
+        maximum();
     }
 
+
+    public <T extends Comparable<T>> void maximum() {
+         Arrays.sort(array);
+    }
+
+//    public void sort() {
+//        System.out.println("sorted array are  ");
+//        for (T num : array) {
+//            System.out.print(num + " ");
+//        }
+//    }
+
+    public void findMax() {
+        Integer index = array.length;
+        T object = array[index - 1];
+        System.out.println("Maximum number are = " + object);
+    }
 }
